@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min and Max Width</title>
+        <style>
+
+            h1{
+                border: 2px solid green;
+                width: 20%;
+                text-align: center;
+                margin: auto;
+                background-color: rgb(204,145,145);
+            }
+            /*class selector*/
+            .menuStyling{
+                border: 2px solid peru;
+                border-radius: 10px; /*used for smooth border*/
+                text-align: center;
+                display: block;
+                padding: 10px;
+                /*This is the total width allocated to the block*/
+                width: 80%; /*1090 * 0.8 = 872px*/
+
+                /*We can set the max width for the allocated pixels for the div blocks*/
+                max-width: 600px;
+
+                /*Similarly we can set min width 
+                resize the tab to see min width*/
+                min-width: 500px;
+
+                /*can use height: here to make sure all div blocks are of same size*/
+                height: 100px;
+
+                background-color: indianred;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bank Page</h1>
+
+        <div>
+            <h2>Choose your Service</h2>
+            <p>Resize the tab to see min width</p>
+        </div>
+
+        <div class="menuStyling">
+            <h3>Profile</h3>
+            <p>Manage your Profile details, passwords,Beneficiary,..etc</p>
+        </div>
+
+        <div class="menuStyling">
+            <h3>Transaction history</h3>
+            <p>View all the transaction here</p>
+        </div>
+
+        <div class="menuStyling">
+            <h3>Transaction Funds</h3>
+            <p>Make Payment</p>
+        </div>
+    </body>
+</html>

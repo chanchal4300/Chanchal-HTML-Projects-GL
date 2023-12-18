@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*(a, b, c, d)*/ /*(a-  inline selector) (b-id) (c-class) (d-type selector)*/
+            /*(0/1, number of times ids appear, number of time classes appears, numbers of times types appear*/
+            /* (0, 0, 0, 2) */
+            /*li whose parent is ul*/
+            ul > li{
+                cursor: pointer;
+            }
+
+            /* (0, 0, 2, 4) */
+            div ul > li.highlight:hover > span{
+                background-color: goldenrod;
+            }
+
+            /*(0, 0, 2, 3)*/
+            ul > li.highlight:hover > span{
+                background-color: olive;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi amet libero ex enim aliquam harum provident, quaerat, perferendis, reiciendis dolores assumenda! Doloremque minima, cum quisquam consectetur perspiciatis at ipsam labore!
+
+            <ul>
+                <li style="cursor: pointer;">One</li> <!-- (1, 0, 0, 0)-->
+                <li class="highlight"><span>Two</span></li>
+                <li>Three</li>
+            </ul>
+        </div>
+        
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Bananas</li>
+        </ul>
+    </body>
+</html>

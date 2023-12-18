@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display and hide</title>
+    <style>
+        .A, .C, .E{
+            background-color: burlywood;
+            border: 2px solid green;
+        }
+        .B{
+            display: none;
+        }
+        /* used to display class B when hovered onto class A */
+        .A:hover + .B{
+            display: block;
+        }
+        /* check the difference between visibility and display block */
+        .D{
+            visibility: hidden;
+        }
+        .C:hover + .D{
+            visibility: visible;
+        }
+        .F{
+            visibility: collapse;
+        }
+        .E:hover + .F{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <p class="A">Hove me for display: none property</p>
+    <span class="B">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+    <p class="C">Hover me to see visibility: hidden</p>
+    <p class="D">Helooo.....</p>
+
+    <p class="E">Hover me to see the visibility: collapse</p>
+    <table class="F">
+        <tr>
+            <th>hree</th>
+            <th>sdfc</th>
+        </tr>
+
+        <tr>
+            <td>df</td>
+            <td>fce</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem at facere consectetur omnis! Aliquid nulla quos id fuga quisquam tempora. Saepe expedita eveniet veniam quod magnam tenetur neque mollitia.</p>
+</body>
+</html>

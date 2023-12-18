@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*select all anchor tag*/
+           /* a{
+                color: olive;
+            }*/
+
+            /*This is the descendant selector - space is the ancestor-descendant combinator*/
+            /*anchor tag somewhere within a div*/
+            div a{
+                color: olive;
+            }
+
+            /*An element that lies directly within othere element*/
+            /*anchor tag directly within a paragraph*/
+            /*child selector -> parent-child combinator*/
+            /*a is children of p*/
+            p > a{
+                font-size: 2em;
+            }
+
+            /*no spaces combinator -> element sthat satisfies each individual selector is selected*/
+            p.x{
+                background-color: lightpink;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, reiciendis repudiandae. Iste repellat, necessitatibus sit deleniti iure ab tenetur rerum saepe dolor nulla adipisci! Delectus, sapiente. Nam nulla porro explicabo?
+            <p class="x">
+                Para 1
+                <a href="#">Some link</a>
+            </p>
+            <p>
+                Para 2
+                <a href="#">Some link</a>
+            </p>
+        </div>
+        <div class="x">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, reiciendis repudiandae. Iste repellat, necessitatibus sit deleniti iure ab tenetur rerum saepe dolor nulla adipisci! Delectus, sapiente. Nam nulla porro explicabo?
+            <a href="#">Some link</a>
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, reiciendis repudiandae. Iste repellat, necessitatibus sit deleniti iure ab tenetur rerum saepe dolor nulla adipisci! Delectus, sapiente. Nam nulla porro explicabo?
+            <p class="x">
+                Para 3
+                <a href="#">Some link</a>
+            </p>
+            <a href="#">Some link</a>
+        </div>
+        <p>
+            Para 4(outside all divs)
+            <a href="#">Some link</a>
+        </p>
+        <a href="#">Some link</a>
+    </body>
+</html>

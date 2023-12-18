@@ -1,0 +1,36 @@
+/*simple selector*/
+h1{
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    color: rgb(233, 52, 20);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(190, 189, 189);
+}
+/*class selector*/
+.MenuStyling{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /*use for smooth border*/
+    width: 20%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+.MenuStyling:active{
+    background-color: grey;
+}
+/*id selector*/
+#helpdesk{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+}

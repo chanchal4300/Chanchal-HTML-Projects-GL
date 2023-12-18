@@ -1,0 +1,20 @@
+*{
+    background-color: thistle;
+}
+h1{
+    color: blue;text-align: center;
+}
+div{
+    border: 1px solid coral;
+    color: yellowgreen;
+    padding: 10px;
+    /*background-repeat: no-repeat;
+    background-position: center;*/
+}
+table{
+    /*first value is for top and bottom , second is for left and right*/
+    padding: 20px 40px;
+    background-color: khaki;
+    text-align: center;
+    background-image: url(https://en.wikipedia.org/wiki/Mickey_Mouse#/media/File:Mickey_Mouse.png);
+}

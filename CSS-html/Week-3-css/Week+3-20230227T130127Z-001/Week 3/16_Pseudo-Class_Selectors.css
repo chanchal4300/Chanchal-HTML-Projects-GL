@@ -1,0 +1,106 @@
+/* simple selector */
+h1{
+    margin:auto;
+    text-align: center;
+    width: 25%;
+    color: rgb(233, 52, 20);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    text-align: left;
+}
+body{
+    background-color: rgb(190, 189, 189);
+}
+
+/* class selector */
+.MenuStyling {
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+
+/* id selector */
+#helpdesk{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    color:royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+}
+
+.LoanStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 200px;
+    background-color: rgb(61, 233, 99);
+    border: 2px solid peru;
+}
+
+.InvestmentStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 180px;
+    background-color: rgb(59, 192, 185);
+    border: 2px solid peru;
+}
+
+.LoanStyling:hover{
+    background-color: wheat;
+}
+.LoanStyling:active{
+    background-color: khaki;
+}
+.MenuStyling:hover{
+    background-color: teal;
+}
+.MenuStyling:active{
+    background-color: grey;
+}
+.InvestmentStyling:hover{
+    background-color: tomato;
+}
+.InvestmentStyling:active{
+    background-color:slateblue;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #f3dd1c;
+}
+  
+/* visited link */
+a:visited {
+    color: #e02c2c;
+}
+  
+/* mouse over link */
+a:hover {
+color: #fcfafc;
+}
+  
+/* selected link */
+a:active {
+color: #006eff;
+}
+
+  

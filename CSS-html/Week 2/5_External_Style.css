@@ -1,0 +1,35 @@
+*{
+    background-color: thistle;
+}
+h1{
+    color: blue;text-align: center;
+}
+div{
+
+    border: 1px solid coral;
+    color: yellowgreen; 
+    padding: 10px;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+}
+table{
+    /*first value is for top and bottom. second value is for left and right*/
+    padding: 20px 40px;
+    background-color: khaki;
+    text-align: center;
+    background-image: url(https://api.openverse.engineering/v1/images/36d18951-82ca-4ae9-9f6e-60582cdc7ac0/thumb/);
+}
+th,td{
+    border: 5px solid green;
+}
+th{
+    background-color: cadetblue;
+    padding: 10px;
+    font-size: 16px;
+}
+td{
+    background-color: burlywood;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

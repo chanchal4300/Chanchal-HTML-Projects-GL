@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*li whose parent is ul*/
+            div ul > li{
+                cursor: pointer;
+            }
+
+            div ul > li.highlight:hover{
+                background-color: rgb(218, 165, 32);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi amet libero ex enim aliquam harum provident, quaerat, perferendis, reiciendis dolores assumenda! Doloremque minima, cum quisquam consectetur perspiciatis at ipsam labore!
+
+            <ul>
+                <li>One</li>
+                <li class="highlight">Two</li>
+                <li>Three</li>
+            </ul>
+        </div>
+        
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Bananas</li>
+        </ul>
+    </body>
+</html>

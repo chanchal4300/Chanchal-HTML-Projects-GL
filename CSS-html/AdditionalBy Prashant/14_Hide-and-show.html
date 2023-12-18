@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                padding: 10px;
+                border: 1px solid black;
+              /*  display: none; *//*it will hide all data*/
+            }
+            #message{
+                /*For hiding the content*/
+               /* display: none;*/ /*it will hide from web page and space will also be removed*/
+
+                /*visibility: hidden;*/ /*It will be hidden from web page but space will also be there*/
+
+                position: relative;
+                top: 30px;
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita? Architecto itaque voluptatum, adipisci quia quis dolores ipsam a totam inventore sint doloremque atque veniam cum. Sequi vel aliquid doloremque!
+        </div>
+        <div id="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita? Architecto itaque voluptatum, adipisci quia quis dolores ipsam a totam inventore sint doloremque atque veniam cum. Sequi vel aliquid doloremque!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita? Architecto itaque voluptatum, adipisci quia quis dolores ipsam a totam inventore sint doloremque atque veniam cum. Sequi vel aliquid doloremque!
+        </div>
+
+        <script>
+            setTimeout(function() {
+                 document.getElementById('message').style.visibility = 'visible';
+            }, 5000);
+        </script>
+    </body>
+</html>

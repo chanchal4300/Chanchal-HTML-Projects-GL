@@ -1,0 +1,87 @@
+/* simple selector */
+h1{
+    margin:auto;
+    text-align: center;
+    width: 25%;
+    color: rgb(233, 52, 20);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    text-align: left;
+}
+body{
+    background-color: rgb(190, 189, 189);
+}
+/* class selector */
+.MenuStyling {
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+.MenuStyling:active{
+    background-color: grey;
+}
+/* id selector */
+#helpdesk{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    color:royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+}
+/* 1. Descendant selector */
+.MenuStyling p{
+    color: rgb(65, 64, 64);
+    font-size: 14px;
+    font-style: italic;
+}
+.LoanStyling:active{
+    background-color: khaki;
+}
+.LoanStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 200px;
+    background-color: rgb(61, 233, 99);
+    border: 2px solid peru;
+}
+/* 2. Child selecotr */
+.LoanStyling > p{
+    color:rgb(226, 65, 37);
+}
+/* 3. Adjacent Sibling Selector */
+#LoansType + p{
+    color: rgb(255, 69, 0);
+}
+.InvestmentStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 180px;
+    background-color: rgb(230, 95, 169);
+    border: 2px solid peru;
+}
+.InvestmentStyling:active{
+    background-color:slateblue;
+}
+/* 4. General Sinling Selector */
+#InvestType ~ p{
+    color: rgb(186, 14, 238);  
+}

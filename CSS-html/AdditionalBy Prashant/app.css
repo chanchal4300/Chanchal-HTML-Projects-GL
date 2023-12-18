@@ -1,0 +1,7 @@
+/*Selector - type selector / tag selector*/
+               p{
+                color: rgb(255, 102, 0); text-decoration: underline;
+               }
+               .intro{
+                color: greenyellow; text-decoration: underline;
+               }

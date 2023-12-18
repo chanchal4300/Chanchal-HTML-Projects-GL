@@ -1,0 +1,152 @@
+/* simple selector */
+h1{
+    margin:auto;
+    text-align: center;
+    width: 25%;
+    color: rgb(233, 52, 20);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    text-align: left;
+}
+body{
+    background-color: rgb(190, 189, 189);
+}
+
+/* class selector */
+.MenuStyling {
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+
+/* id selector */
+#helpdesk{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    color:royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+}
+
+.LoanStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 200px;
+    background-color: rgb(61, 233, 99);
+    border: 2px solid peru;
+}
+
+.InvestmentStyling{
+    text-align:center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px; /* used for smooth borders */
+    width: 20%;
+    height: 180px;
+    background-color: rgb(59, 192, 185);
+    border: 2px solid peru;
+}
+
+.copyright{
+    background-color: royalblue;
+    border: 3px solid rebeccapurple;
+}
+
+.LoanStyling:hover{
+    background-color: wheat;
+}
+.LoanStyling:active{
+    background-color: khaki;
+}
+.MenuStyling:hover{
+    background-color: teal;
+}
+.MenuStyling:active{
+    background-color: grey;
+}
+.InvestmentStyling:hover{
+    background-color: tomato;
+}
+.InvestmentStyling:active{
+    background-color:slateblue;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #f3dd1c;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #e02c2c;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #fcfafc;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #006eff;
+  }
+
+/* Pseudo Element Selectors */
+
+/* 1. Pseudo after selector */
+p::after{
+    content: "...";
+}
+
+/* 2. Pseudo before selector */
+p::before{
+    content: ":) ";
+}
+
+/* 3. Pseudo First letter selector */
+#pseudo-element-style::first-letter{
+    color: rgb(236, 18, 18);
+    font-size: xx-large;
+}
+
+/* 4. Pseudo First line selector */
+#pseudo-element-style::first-line{
+    color: rgb(61, 233, 99);
+}
+
+/* 5. Pseudo marker selector */
+/* styles every marker in the page */
+/* ::marker{
+    color: rgb(240, 157, 89);
+} */
+/* styles all the markers inside the class "InvestmentStyling"  */
+.InvestmentStyling ::marker{
+    color: rgb(240, 157, 89);
+}
+
+/* 6. Pseudo selection selector */
+/* when selecting text on the page, all the text will be hilighted to yellow */
+/* ::selection{
+    background-color: yellow;
+} */
+/* All the paragraph tags will be hilighted with yellow when selected. Rest all with blue(default) */
+p::selection{
+    background-color: yellow;
+}
