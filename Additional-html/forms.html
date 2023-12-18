@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--"novalidate" will ignore the requirement-->
+        <form action="message.html" method="post" novalidate>
+                <!-- Type-1-->
+                Name: <input type="text" /><br><br>
+                Start date: <input type="date" /><br><br>
+                Password: <input type="password"><br>
+
+                <hr>
+                <!--Type-2-->
+                <label for="name">Name</label>:
+                <input type="text" id="name" name="name" value="Mary" required/><br><br>
+                <!--Value will give a default value for the name,
+                required will say its required to enter here.-->
+
+                <!--Type-3-->
+                <label>Start date:<input type="date" name="Start date" min="2019-06-24" max="2019-08-30"/></label><br><br>
+                <label>Password</label>:<input type="password" name="Password"><br><br>
+
+                <label for="email">Email Id</label>:
+                <input type="email" id="email" name="email"/><br><br>
+
+                <label for="searchForProducts">Search For Products</label>:
+                <input type="search" id="searchForProducts" name="search"/><br><br>
+
+                <label for="quantity">Quantity</label>:
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"/><br><br>
+               
+
+                <!--Textarea-->
+                <label for="address">Address</label>:
+                <textarea id="address" row="6"></textarea><br><br>
+                
+
+                <label for="city">City</label>
+                <select id="city" name="city">
+                    <option value="BNG">Bangalore</option>
+                    <option value="MAS">Chennai</option>
+                    <option selected value="BOM">Mumbai</option><!--selected word will select the input-->
+                    <option value="DEL">Delhi</option>
+                    <option value="Guj">Gujrat</option>
+                    <!--here value tag works for when -> We would like to have the display text of options to be different from the text sent to the server for the selected option-->
+                </select><br><br>
+
+                <!--Checkbox and radio button-->
+                <label for="interests">Interests</label>:
+                <div id="interests">
+                    <label><input type="checkbox" name="interests" value="sports"/>Sports</label>
+                    <label><input type="checkbox" name="interests" value="currents affrairs"/>Currents affrairs</label>
+                    <label><input type="checkbox" name="interests" value="films"/>Films</label>
+                    
+                </div>
+
+
+                <label for="interests">Main Interests</label>:
+                <div id="interests">
+                    <label><input type="radio" name="interests" value="sports"/>Sports</label>
+                    <label><input type="radio" name="interests" value="currents affrairs" checked/>Currents affrairs</label>
+                    <label><input type="radio" name="interests" value="films"/>Films</label>
+                    
+                </div>
+                <hr/>
+                <!--Button types-->
+                <button>Submit</button>
+                <input  type="submit" value="checkout"/>
+                <input  type="reset" value="Reset all inputs"/>
+        </form>
+
+        <button>General button</button>
+    </body>
+</html>
