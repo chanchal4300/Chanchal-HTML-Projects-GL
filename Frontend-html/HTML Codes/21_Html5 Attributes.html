@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html5 Attributes</title>
+</head>
+<body>
+    <!--some html 5 attributes are number, email, search, date, min, max and many more-->
+
+    <form>
+        <!--min and max will not let u entet the numbers beyond the range specified when using 
+            up and down arrows in web page. if you manyally type the number you can insert any value.
+            But when you click on submit pop up message shows up-->
+        <label for="id">Id:</label>
+        <input type="number" id="id" min="1" max="10">
+
+        <!--if we do not have '@' or text after '@', a pop up will be shown-->
+        <label for="email">Email Id:</label>
+        <input type="email" id="email">
+
+        <!--we will get a cross mark in the input field for search-->
+        <label for="search">Search:</label>
+        <input type="search" id="search">
+
+        <!--when we click on the button the data is transfered to the file mentioned in action 
+            attribute in form tag-->
+        <button>Submit</button>
+    </form>
+</body>
+</html>

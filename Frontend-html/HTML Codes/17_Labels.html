@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to Input </title>
+</head>
+<body>
+    <!--used to take input from users
+        br tag is used to break into new line
+    -->
+
+    <!--Approach 1 for label. We cannot style the label here-->
+    Id: <input type="number"><br>
+
+    <!--Approach 2 for label. We can style the label 
+        here but we need to link them with Id. 
+        Id can be text or number-->
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br>
+
+    <!--Approach 3 for label. We can style the label here-->
+    <label>Password: <input type="password"></label><br>
+
+    <!--Provides calendar to select date-->
+    <label for="Date">Date: </label>
+    <input type="date" id="Date"><br>
+
+    <!--We will use this approach as it is the best practice-->
+    <label for="Radio">Radio: </label>
+    <input type="radio" id="Radio">
+</body>
+</html>

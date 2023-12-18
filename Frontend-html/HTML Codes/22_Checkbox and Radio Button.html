@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>checkbox and radio buttons</title>
+
+    <style>
+        .observe{
+            background-color: rosybrown;
+            border: 2px dashed red;
+        }
+
+        .sample{
+            background-color: seagreen;
+            color: whitesmoke;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+
+        <!--to group checkboxes, we use div or fieldset attribute-->
+        <!--div attribute will group some part of the web page-->
+        <h4 for="Question 1">Question 1: Choose the correct option/s:</h4>
+        <div id ="Question 1" class="observe">
+            <!--name is used to identify the input and value is the result what the user selects.
+                These are used to send information to javascript files or backend files-->
+            <input type="checkbox" id="op1" name="option1" value="India is a state">
+            <label for="op1">India is a state</label><br>
+            
+            <input type="checkbox" id="op2" name="option2" value="India is a Country">
+            <label for="op2">India is a Country</label><br>
+            
+            <input type="checkbox" id="op3" name="option3" value="India is in Asia">
+            <label for="op3">India is in Asia</label>
+        </div>
+
+        <h4 for="Question 2">Question 2: Choose the most appropriate option:</h4>
+        <div id="Question 2" class="observe">
+            <!--As long as the name is same for all radio buttons we can select one option only-->
+            <input type="radio" id="a1" name="option" value="India is a state">
+            <label for="a1">India is a state</label><br>
+            
+            <input type="radio" id="a2" name="option" value="India is a Country">
+            <label for="a2">India is a Country</label><br>
+            
+            <input type="radio" id="a3" name="option" value="India is democratic Country">
+            <label for="a3">India is democratic Country</label>
+        </div>
+
+        <button class="sample">Submit</button>
+    </form>
+</body>
+</html>
