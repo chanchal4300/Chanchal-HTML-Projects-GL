@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Label Tags</title>
+    </head>
+    <body>
+        <!-- Approach 1 for label, we cannot style the label here-->
+        Id for number: <input type="number"><br>
+
+        <!-- Approach 2 for label, we can style the label here but we need to link them with id
+        Id can be text or number-->
+        <label for="name">name for text: </label>
+        <input type="text" id="name"><br>
+
+        <!-- Approach 3 for label, we can style the label here-->
+        <label>Password: <input type="password"></label>
+        <br>
+
+        <!-- Provides calender to select date-->
+        <label for="date">Date: </label>
+        <input type="date" id="date"><br>
+
+        <!-- We will use this approach as it is the best practice-->
+        <label for="Radio">Radio: </label>
+        <input type="radio" id="Radio">
+    </body>
+</html>

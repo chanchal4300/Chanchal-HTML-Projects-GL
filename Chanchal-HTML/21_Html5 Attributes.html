@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <!--color property will color the text-->
+        <!--font-size will give diffrent size of the text-->
+        <!--we use # before id-->
+        <style>
+            .label{
+                background-color: silver;
+                border: 1px solid peru;
+                font-style: oblique;
+                color: royalblue;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Action tag is use for demostration-->
+        <form action="message.html">
+
+            <!--min and max will not let you enter number boyond the space specified
+            when using up and down arrows in web page. if you manually type the numbers you can insert any value
+        but when you click on submit pop up message shows up-->
+            <label for="Id" class="label">Id:</label>
+            <input type="number" id="Id" min="1" max="10"><br>
+
+            <!--if you do not have '@' or text after '@', a pop up will be shown-->
+            <label for="email" class="label">Email Id:</label>
+            <input type="email" id="email"><br>
+
+
+            <!-- we will get cross marks in the input field for search-->
+            <label for="search" class="label">Search:</label>
+            <input type="search" id="search"><br>
+
+            <!-- When we click on button the data transfered to the file mentioned in action
+            acttribute in the form tag-->
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
